@@ -7,14 +7,14 @@ I had to create this because I was using another API, which would give data sort
 Here is how I use.
 
 
-  Object[] initialHolderOfArrays = getAnyObjectFromThisMethod();
-  BackPack<ContentFace> backPack = backPack = new BackPack<>(indHolder, 0);
+    Object[] initialHolderOfArrays = getAnyObjectFromThisMethod();
+    BackPack<ContentFace> backPack = backPack = new BackPack<>(indHolder, 0);
   
   
 To get the data from the BackPack, we just do.
 
 
-  Object[] faces = backPack.getContent(Object.class);
+    Object[] faces = backPack.getContent(Object.class);
 
 
 Note: In place of Object, you can use any Class you want to use. I used it for custom datastructure. It works!!
