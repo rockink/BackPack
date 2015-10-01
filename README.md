@@ -8,7 +8,7 @@ Here is how I use.
 
 
     Object[] initialHolderOfArrays = getAnyObjectFromThisMethod();
-    BackPack<ContentFace> backPack = backPack = new BackPack<>(indHolder, 0);
+    BackPack<ContentFace> backPack = new BackPack<>(indHolder, 0);
   
   
 To get the data from the BackPack, we just do.
