@@ -1,20 +1,21 @@
 # BackPack
-BackPack is last in, first out. 
+BackPack is the datastructure that is based on last in, first out, but maintaining the chrological order. 
 
 
-I had to create this because I was using another API, which would give data sorted by date, which meant that least date was on the last. I had to maintain the list, while not repeating reading the data again and again. Therefore, I created this, so that the data stored in the last would get replaced my new data, and the data read starts from that pointer.
+I created this when I was using one of the APIs that gave me data in the decreasing order of date. I also had reciever setup for the broadcast and it would send me the most updated data. So, I had a case that the data are stored in decreasing order of date, and new data recieved are of newer date. So, I created this, created a pointer of new data, and send the interated value from that pointer. So, a call to this datastructure would give user the data sorted based on that criteria. 
 
 Here is how I use.
 
 
-    Object[] initialHolderOfArrays = getAnyObjectFromThisMethod();
-    BackPack<Object> backPack = new BackPack<>(indHolder, 0);
+    AnyObject[] initialHolderOfArrays = getAnyObjectFromThisMethod(); //your implmenetation of method that returns AnyObject[]
+    BackPack<AnyObject> backPack = new BackPack<>(initialHolderOfArrays, 0); //initiate the backPack and set pointer at 0
+    
   
   
 To get the data from the BackPack, we just do.
 
 
-    Object[] faces = backPack.getContent(Object.class);
+    AnyObject[] faces = backPack.getContent(AnyObject.class);
 
 
-Note: In place of Object, you can use any Class you want to use. I used it for custom datastructure. It works!!
+Note: In place of AnyObject, you can use any Class you want to use. I used it for custom datastructure. It works!!
