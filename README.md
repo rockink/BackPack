@@ -1,8 +1,9 @@
 # BackPack
-BackPack is the datastructure that is based on last in, first out, but maintaining the chrological order. 
+BackPack is the datastructure that is based on last in, first out, but maintaining the chrological order.
+
+I created this when I was using one of the APIs that gave me data in the decreasing order of date. I also had reciever setup for the broadcast and it would send me the most updated data. So, I had a case that the data are stored in decreasing order of date, and new data received are of newer date. So, I created this, created a pointer of new data, and send the iterated value from that pointer. So, a call to this data structure would give user the data sorted based on that criteria.
 
 
-I created this when I was using one of the APIs that gave me data in the decreasing order of date. I also had reciever setup for the broadcast and it would send me the most updated data. So, I had a case that the data are stored in decreasing order of date, and new data recieved are of newer date. So, I created this, created a pointer of new data, and send the interated value from that pointer. So, a call to this datastructure would give user the data sorted based on that criteria. 
 
 Here is how I use.
 
